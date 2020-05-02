@@ -113,7 +113,7 @@ class PhraseTrigger(Trigger):
                 text_clean += character
         phrase = self.phrase
         phrase_continued = phrase.replace(" ", "")
-        denials = {phrase : phrase + "s ", phrase_continued : phrase_continued + "s "}
+        denials = [phrase, phrase_continued]
         for i in denials:
             if i in text_clean and len(i) == len(text_clean):               
                 return True
