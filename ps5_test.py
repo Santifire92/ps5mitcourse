@@ -81,7 +81,7 @@ class ProblemSet5(unittest.TestCase):
             self.assertFalse(trig.evaluate(badorder), "TitleTrigger fired when the words in the phrase appeared out of order.")
             self.assertFalse(trig.evaluate(nospaces), "TitleTrigger fired when words were not separated by spaces or punctuation.")
             self.assertFalse(trig.evaluate(nothing), "TitleTrigger fired when none of the words in the phrase appeared.")
-"""
+
     def test2DescriptionTrigger(self):
         cuddly    = NewsStory('', '', 'The purple cow is soft and cuddly.', '', datetime.now())
         exclaim   = NewsStory('', '', 'Purple!!! Cow!!!', '', datetime.now())
@@ -113,7 +113,7 @@ class ProblemSet5(unittest.TestCase):
             self.assertFalse(trig.evaluate(badorder), "DescriptionTrigger fired when the words in the phrase appeared out of order.")
             self.assertFalse(trig.evaluate(nospaces), "DescriptionTrigger fired when words were not separated by spaces or punctuation.")
             self.assertFalse(trig.evaluate(nothing), "DescriptionTrigger fired when none of the words in the phrase appeared.")
-
+"""
     def test3altBeforeAndAfterTrigger(self):
 
         dt = timedelta(seconds=5)
